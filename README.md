@@ -1,2 +1,2 @@
 # blog-jahia-jhipster2
-Ippon USA blog about integrating Jahia and JHipster2
+Code for Ippon USA blog about integrating Jahia and JHipster2
