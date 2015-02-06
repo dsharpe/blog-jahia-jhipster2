@@ -1,0 +1,22 @@
+<div>
+    <h2 translate="articles.title">Articles</h2>
+
+    <table class="table table-condensed table-striped table-bordered table-responsive">
+        <thead>
+        <tr>
+            <th>{{'articles.table.header.title' | translate}}</th>
+            <th>{{'articles.table.header.link' | translate}}</th>
+        </tr>
+        </thead>
+
+        <tr ng-repeat="(k, v) in articles">
+            <td>{{v.title}}</td>
+            <td><a href="" ng-click="fullArticle(k)">{{'articles.table.data.fullArticle' | translate}}</a></td>
+        </tr>
+    </table>
+    
+    <div ng-show="fullArticleText">
+    	<h3>{{fullArticleTitle}}</h3>
+    	<span ng-bind-html="fullArticleText"></span>
+    </div>
+</div>

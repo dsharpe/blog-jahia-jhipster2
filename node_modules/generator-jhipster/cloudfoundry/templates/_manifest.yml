@@ -1,0 +1,9 @@
+---
+path: .
+instances: 1
+services:
+- <%= cloudfoundryDeployedName %>
+applications:
+- name: <%= cloudfoundryDeployedName %><% if (cloudfoundryProfile == 'prod') { %>
+  env:
+    SPRING_PROFILES_ACTIVE: prod<% } %>

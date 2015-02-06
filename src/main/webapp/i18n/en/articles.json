@@ -1,0 +1,14 @@
+{
+    "articles": {
+        "title": "Articles",
+        "table": {
+            "header": {
+                "title": "Title",
+                "link": "Link"
+            },
+            "data": {
+                "fullArticle": "Full Article"
+            }
+        }
+    }
+}
